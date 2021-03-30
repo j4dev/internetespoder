@@ -1,0 +1,25 @@
+<div class="container">
+    <br>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">email</th>
+                <th scope="col">first_name</th>
+                <th scope="col">last_name</th>
+                <th scope="col">n_document</th>
+                <th scope="col">phone_number</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let row of data">
+            <tr>
+                <th scope="row">{{row.id}}</th>
+                <td>{{row.email}}</td>
+                <td>{{row.first_name}}</td>
+                <td>{{row.last_name}}</td>
+                <td>{{row.n_document}}</td>
+                <td>{{row.phone_number}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
